@@ -8,4 +8,4 @@
 ## List Of Web pages
 ### Travel agency
     web page is for travel agency website
-[Word Counter](https://a-deep97.github.io/word-counter/)
+[Word Counter](https://https://a-deep97.github.io/web-page-designs/travel%20agency/)

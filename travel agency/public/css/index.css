@@ -1,0 +1,48 @@
+:root{
+    /* color code */
+    --navy_blue: #0f1626;
+    --leather: #ab987a;
+    --coral: #ff533d;
+    --eggshell: #f5f5f5;
+}
+
+
+body,html{
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+header{
+    height: 2px;
+}
+#main-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--leather);
+    height: 50px;
+}
+#main-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 600px;
+}
+#offer-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--eggshell);
+    height: 700px;
+}
+#contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: var(--navy_blue);
+}
+footer{
+    background-color: black;
+    height: 30px;
+}

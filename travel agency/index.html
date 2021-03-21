@@ -5,14 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./public/css/index.css">
-    <title>Travel agency</title>
+    <script src="./public/js/p5js/lib/p5.js"></script>
+    <script src="./public/js/p5js/lib/p5.dom.js"></script>
+    <title>Your Trip</title>
 </head>
 <body>
     <header></header>
-    <nav id="main-navbar"></nav>
-    <section id="main-section" ></section>
-    <section id="offer-section"></section>
-    <section id="contact-section"></section>
-    <footer></footer>
+    <nav id="main-navbar">
+        <div id="title-container">
+            <div id="logo-container"></div>
+            <div id="name-container">Your Trip .com</div>
+        </div>
+        <div id="nav-links-container">
+            <div class="nav-link" id="home-link">
+                <a href="">Home</a>
+            </div>
+            <div class="nav-link" id="about-link">
+                <a href="">About Us</a>
+            </div>
+            <div class="nav-link" id="terms-link">
+                <a href="">Terms & Conditions</a>
+            </div>
+            <div class="nav-link" id="policy-link">
+                <a href="">Privacy Policy</a>
+            </div>
+            <div class="nav-link" id="contact-link">
+                <a href="">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <section id="main-section" >
+        <div id="airplane-animation-container"></div>
+        <div id="destination-search-container">
+            <form action="" id="destination-search-form">
+                <input type="text" id="destination-input" name="destination">
+                <button type="submit" id="destination-button">search</button>
+            </form>
+        </div>
+    </section>
+    <section id="offer-section">
+        <div id="package-container">
+            <div id="package-container-heading">Popular Packages</div>
+            <div class="tour-heading">Popular vacation tour</div>
+            <div class="package-row" id="vacation-tours">
+                <div class="tour-package" id="vacation1" onclick=" location.href='';">
+                    <div class="tour-image">
+                        <img src="./public/img/mauritius340x250.jpg" alt="">
+                    </div>
+                    <div class="tour-description">
+                        <div class="tour-name">MAURITIUS</div>
+                        <div class="about-tour">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam explicabo, beatae excepturi recusandae sit itaque pariatur expedita dolorem facilis repellendus, distinctio minus minima repudiandae quibusdam aspernatur esse asperiores nostrum quas?</div>
+                    </div>
+                    <div class="tour-pricing">$ 1500</div>
+                </div>
+                <div class="tour-package" id="vacation2" onclick=" location.href='';">
+                    <div class="tour-image">
+                        <img src="./public/img/japan340x250.jpg" alt="">
+                    </div>
+                    <div class="tour-description">
+                        <div class="tour-name">JAPAN</div>
+                        <div class="about-tour">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dolorum veniam quis nulla nostrum dolorem asperiores explicabo, a eveniet aliquid in ex? Recusandae, architecto at consectetur praesentium enim perspiciatis explicabo.</div>
+                    </div>
+                    <div class="tour-pricing">$ 1900</div>
+                </div>
+                <div class="tour-package" id="vacation3" onclick=" location.href='';">
+                    <div class="tour-image">
+                        <img src="./public/img/egypt340x250.jpg" alt="">
+                    </div>
+                    <div class="tour-description">
+                        <div class="tour-name">EGYPT</div>
+                        <div class="about-tour">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore ratione rem porro qui perspiciatis minima non suscipit voluptatem doloribus modi molestiae dolores, id sunt deserunt repellat libero eum atque enim.</div>
+                    </div>
+                    <div class="tour-pricing">$ 1450</div>
+                </div>
+            </div>
+            <div class="tour-heading">Popular honeymoon tours</div>
+            <div class="package-row" id="honeymoon-tours">
+                <div class="tour-package" id="honeymoon1" onclick=" location.href='';">
+                    <div class="tour-image">
+                        <img src="./public/img/maldives340x250.jpg" alt="">
+                    </div>
+                    <div class="tour-description">
+                        <div class="tour-name">MALDIVES</div>
+                        <div class="about-tour">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam necessitatibus officia velit hic quae quisquam architecto. Autem sint ratione cumque ex soluta amet deserunt odio possimus labore. Atque, minus dolore?</div>
+                    </div>
+                    <div class="tour-pricing">$ 1800</div>
+                </div>
+                <div class="tour-package" id="honeymoon2" onclick=" location.href='';">
+                    <div class="tour-image">
+                        <img src="./public/img/paris340x250.jpg" alt="">
+                    </div>
+                    <div class="tour-description">
+                        <div class="tour-name">PARIS</div>
+                        <div class="about-tour">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eius officiis autem explicabo perferendis debitis sint totam. Dicta repellendus vero impedit minima voluptate, ipsa soluta molestias deleniti corporis, sint eligendi?</div>
+                    </div>
+                    <div class="tour-pricing">$ 2200</div>
+                </div>
+                <div class="tour-package" id="honeymoon3" onclick=" location.href='';">
+                    <div class="tour-image">
+                        <img src="./public/img/bali340x250.jpg" alt="">
+                    </div>
+                    <div class="tour-description">
+                        <div class="tour-name">BALI</div>
+                        <div class="about-tour">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ullam vitae incidunt nihil facere ex fugiat illum distinctio dolorum veritatis deserunt, eveniet delectus ad harum modi cum, nam aperiam libero?</div>
+                    </div>
+                    <div class="tour-pricing">$ 2050</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-section">
+        <div id="contact-form-container">
+            <div id="contact-heading">Contact Us</div>
+            <form action="" id="contact-form">
+                <label for="name" class="contact-form-label">Name</label>
+                <input type="text" id="name" class="contact-form-input" name="name">
+                <label for="email" class="contact-form-label">Email</label>
+                <input type="email" id="email" class="contact-form-input" name="email">
+                <label for="contact-number" class="contact-form-label">Contact</label>
+                <input type="number" id="contact-number" class="contact-form-input" name="contact-number">
+                <label for="message" class="contact-form-label">Message</label>
+                <textarea name="message" id="message-box" cols="30" rows="10"></textarea>
+                <button type="submit" id="contact-form-submit-button">Submit</button>
+            </form>
+        </div>
+        <div id="company-address-contact-container">
+            <div id="about-company">
+                <div id="about-heading">About Your Trip</div>
+                <div id="about-article">Consider this scene: beautiful sapphire seas, golden beaches, and rolling mountains. The sun is about to fall into the ocean, making this wonder-view even more stunning. Have your phone ready; this photo opportunity could be just what you're looking for.You consider going into town to shop after this memory-making experience, but right now, this Pacific Coast haven is sweeping you off your feet.</div>
+            </div>
+            <div id="social-links">
+                <div class="social-link" id="facebook-link" onclick=" location.href='http://www.facebook.com';">
+                    <img src="./public/img/facebook-logo.png" alt="">
+                </div>
+                <div class="social-link" id="instagram-link" onclick=" location.href='http://www.instagram.com';">
+                    <img src="./public/img/instagram-logo.png" alt="">
+                </div>
+                <div class="social-link" id="twitter-link" onclick=" location.href='http://www.twitter.com';">
+                    <img src="./public/img/twitter-logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer> Copyright&copy 2021 YourTrip.com | All rights reserved</footer>
+    <!-- scripts -->
+    <script src="./public/js/p5js/sketches/airplane.js" ></script>
 </body>
 </html>

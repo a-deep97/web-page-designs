@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 :root{
     /* color code */
     --navy_blue: #0f1626;
     --leather: #ab987a;
     --coral: #ff533d;
     --eggshell: #f5f5f5;
+    --font1: 'Berkshire Swash', cursive;
+    --font2: 'Roboto', sans-serif;
 }
-
 
 body,html{
     padding: 0px 0px;
@@ -18,31 +21,374 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--leather);
-    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 70px;
 }
-#main-section{
+#title-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
-    height: 600px;
+    width: 50%;
+    height: 95%;
+}
+#logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+#name-container{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    font-size: 2.2rem;
+    color: var(--eggshell);
+    font-family: var(--font1);
+}
+#nav-links-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 95%;
+    height: 95%;
+    padding: 0px 20px;
+}
+.nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px;
+    width: 150px;
+    height: 80%;
+}
+.nav-link a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 80%;
+    padding: 5px 5px;
+    font-size: 1.2rem;
+    color: var(--eggshell);
+    font-family: var(--font2);
+    text-decoration: none;
+}
+.nav-link a:hover{
+    background-color: var(--navy_blue);
+}
+#main-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 650px;
+}
+#main-section::before{
+    content: "";
+    position: absolute;
+    background: url('../img/background2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 720px;
+    z-index: -1;
+    top: 0%;
+}
+#airplane-animation-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+}
+#destination-search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 80px;
+}
+#destination-search-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 95%;
+}
+#destination-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.75);
+    height: 50%;
+    width: 90%;
+    margin: 0px 5px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    padding: 0px 10px;
+    outline: none;
+}
+#destination-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.75);
+    height: 50%;
+    width: 50%;
+    margin: 0px 5px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+#destination-button:hover{
+    background-color: var(--navy_blue);
+    color: var(--eggshell);
 }
 #offer-section{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--eggshell);
-    height: 700px;
+    height: 1200px;
+}
+#package-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: 95%;
+}
+#package-container-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin: 5px 5px;
+    font-family: var(--font2);
+}
+.tour-heading{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    height: 30px;
+    margin: 10px 0px;
+    font-size: 1.8rem;
+    font-family:  var(--font2);
+}
+.package-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+    margin: 10px 0px;
+}
+.tour-package{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 350px;
+    margin: 0px 20px; 
+    cursor: pointer;
+}
+.tour-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+}
+.tour-image:hover{
+    width: 120%;
+}
+.tour-image img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.tour-description{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    height: 70%;
+    background-color: white;
+    border: solid 2px var(--navy_blue);
+    border-radius: 5px;
+}
+.tour-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    font-size: 1.5rem;
+    font-family: var(--font2);
+}
+.about-tour{
+    display: flex;
+    justify-content: center;
+    align-items: center;          
+    width: 95%;
+    height: 95%;
+    margin: 2px 0px;
+    border: solid 1px black;  
+    border-radius: 10px;
+}
+.tour-pricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 20%;
+    font-size: 1.7rem;
+    font-family: var(--font2);
+    color: var(--coral);
+    background-color: white;
 }
 #contact-section{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 600px;
     background-color: var(--navy_blue);
 }
+#contact-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: 90%;
+    margin: 10px 20px;
+    border: solid 1px var(--eggshell); 
+    border-radius: 10px;
+}
+#contact-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family:  var(--font2);
+    color: var(--eggshell);
+    margin: 10px 0px;
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.contact-form-label{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 95%;
+    font-size: 1.5rem;
+    font-family:  var(--font2);
+    color: var(--eggshell);
+}
+.contact-form-input{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 95%;
+    height: 25px;
+    margin: 3px 0px;
+    padding: 0px 10px;
+    border-radius: 20px;
+    outline: none;
+}
+#message-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 95%;
+    margin: 3px 0px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    resize: none;
+    outline: none;
+}
+#contact-form-submit-button{
+    display: flex;
+    height: 30px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    border-radius: 20px;
+}
+#company-address-contact-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: 90%;
+    margin: 10px 20px;    
+}
+#about-company{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 95%;
+    color: var(--eggshell);
+}
+#about-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    font-size: 2.5rem;
+    font-family:  var(--font2);
+    margin: 10px 0px;
+}
+#about-article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    font-size: 1.3rem;
+    font-family:  var(--font2);
+    margin: 10px 0px;
+}
+#social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 95%;
+}
+.social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 70px;
+    margin: 0px 10px;
+}
+.social-link:hover{
+    height: 100%;
+    width: 90px; 
+}
+.social-link img{
+    max-width: 100%;
+    max-height: 100%;
+}
 footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     height: 30px;
+    font-size: 1rem;
+    color: var(--eggshell);
 }

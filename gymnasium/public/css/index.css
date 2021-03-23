@@ -1,29 +1,284 @@
 :root{
 
+    --screen: #c5c1c0;
+    --steel: #0a1612;
+    --denim: #1a2930;   
+    --marigold: #f7ce3e;
 }
 
 body, html{
-    
+    margin: 0px 0px;
 }
-header{
-
+header{  
 }
 #main-navbar{
-
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 80px;
 }
+#title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    background-color: var(--marigold);
+}
+#links-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    background-color: var(--steel);
+    opacity: 0.95;
+}
+/* Main section */
 #section1{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
 }
+#section1::before{
+    content: "";
+    position: absolute;
+    background: url('../img/background1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 820px;
+    top: 0%;
+    z-index: -1;
+    opacity: 0.9;
+    transition: 5s;
+
+    animation-name: main-bg-animate;
+    animation-direction: alternate;
+    animation-duration: 40s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+/* main background animation */
+@keyframes main-bg-animate{
+    0%{
+        background: url('../img/background1.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    35%{
+        background: url('../img/background2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    70%{
+        background: url('../img/background3.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background: url('../img/background4.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/* Location sections */
 #section2{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
 }
+#location-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 30%; 
+    font-size: 2.4rem;
+    background-color: #f7ce3e;
+}
+#location-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+}
+/* about gym */
 #section3{
-    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: url('../img/background5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
 }
+#about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 10px;
+    width: 40%;
+    height: 95%;
+}
+#about-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 30%;
+    margin: 0px 20px;
+    font-size: 3rem;
+    color: white;
+}
+#about-article{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    height: 100%;
+    font-size: 1.8rem;
+    color: white;
+}
+/* membership and plans */
 #section4{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-color: var(--marigold);
+}
+/* gallary section */
+#section5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: var(--denim);
 }
 
-footer{
+#gallery-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.gallery-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+/* contact section */
+#section6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    background-color: var(--steel);
+}
 
+#contact-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: 90%;
+    margin: 10px 20px;
+    border: solid 1px white; 
+    border-radius: 10px;
+}
+#contact-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6rem;
+    color: white;
+    margin: 10px 0px;
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.contact-form-label{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 95%;
+    font-size: 1.5rem;
+    color: white;
+}
+.contact-form-input{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 95%;
+    height: 25px;
+    margin: 3px 0px;
+    padding: 0px 10px;
+    border-radius: 20px;
+    outline: none;
+}
+#message-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 95%;
+    margin: 3px 0px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    resize: none;
+    outline: none;
+}
+#contact-form-submit-button{
+    display: flex;
+    height: 30px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    border-radius: 20px;
+}
+#about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 95%;
+    margin: 0px 10px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    font-size: 1.2rem;
 }

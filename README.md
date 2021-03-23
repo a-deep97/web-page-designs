@@ -8,4 +8,8 @@
 ## List Of Web pages
 ### Travel agency
     web page is for travel agency website
-[   Your trip](https://a-deep97.github.io/web-page-designs/travel%20agency/)
+[Your trip](https://a-deep97.github.io/web-page-designs/travel%20agency/)
+
+### Gymnasium
+    Web page is for gymnasium website
+[Solitary gymnasium](https://a-deep97.github.io/web-page-designs/gymnasium/)

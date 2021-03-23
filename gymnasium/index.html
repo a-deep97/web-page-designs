@@ -10,22 +10,88 @@
 <body>
     <header></header>
     <nav id="main-navbar">
-        <div id="title-container"></div>
-        <div id="links-container"></div>
+        <div id="title-container" onclick=" location.href='';">
+            <div id="title-icon"></div>
+            <div id="title-name">Solitary gymnasium</div>
+        </div>
+        <div id="nav-links-container">
+            <div class="nav-link" id="link1">
+                <a href="">Franchise</a>
+            </div>
+            <div class="nav-link" id="link2">
+                <a href="">Find Trainer</a>
+            </div>
+            <div class="nav-link" id="link3">
+                <a href="">Blogs</a>
+            </div>
+            <div class="nav-link" id="link4">
+                <a href="">Programs</a>
+            </div>
+            <div class="nav-link" id="link5">
+                <a href="">Contact Us</a>
+            </div>
+            <div class="nav-link" id="link6">
+                <a href="">Join Now</a>
+            </div>
+        </div>
     </nav>
     <section id="section1"></section>
     <section id="section2">
-        <div id="location-heading">We cover it over ....</div>
-        <div id="location-container"></div>
+        <div id="location-heading">WE COVER IT OVER ....</div>
+        <div id="location-container">
+            <!-- <div class="city-container">
+                <div class="city-image">
+                    <img src="" alt="">
+                </div>
+                <div class="city-name"></div>
+            </div> -->
+        </div>
     </section>
     <section id="section3">
         <div id="about-container">
             <div id="about-heading">FITNESS FOR EVERYDAY ATHLETES</div>
-            <div id="about-article">Our virtual training platform offers world-class, signature programming designed to get you stronger and fitter, faster than ever before, and ready to win at the sport of life.
-                What is the sport of life? It’s what you do each day – work, go to school, spend time with family, hobbies and more. When life gets tough, your fitness routine should prepare you to handle situations better and more efficiently, allowing you to perform at the highest level possible.</div>
+            <div id="about-article">Our interactive training platform includes world-class, signature programming that will get you stronger and fitter than ever before, quicker than ever before, and ready to win at life's sport. What exactly is life's sport? It's something you do every day – work, education, family time, hobbies, and so on.When life throws you a curveball, your workout routine should prepare you to deal with it better and more effectively, helping you to perform at your best.</div>
         </div>
     </section>
-    <section id="section4"></section>
+    <section id="section4">
+        <div id="plan-container">
+            <div id="plan-heading">CHOOSE YOUR PLAN ...</div>
+            <div id="plans">
+                <div class="plan" id="plan1">
+                    <div class="plan-name">Monthly</div>
+                    <div class="plan-description">
+                        <p>7 day free trial, <br> 1000/- monthly thereafter</p>
+                    </div>
+                    <div class="plan-subscription" onclick=" location.href='';">Subscribe</div>
+                </div>
+                <div class="plan" id="plan4">
+                    <div class="plan-name">Quarterly</div>
+                    <div class="plan-description">
+                        <p>7 day free trial, <br> 750/- monthly thereafter</p>
+                    </div>
+                    <div class="plan-subscription" onclick=" location.href='';">Subscribe</div>
+                </div>
+                <div class="plan" id="plan4">
+                    <div class="plan-name">Half yearly</div>
+                    <div class="plan-description">
+                        <p>7 day free trial, <br> 600/- monthly thereafter</p>
+                    </div>
+                    <div class="plan-subscription" onclick=" location.href='';">Subscribe</div>
+                </div>
+                <div class="plan" id="plan4">
+                    <div class="plan-name">Annual</div>
+                    <div class="plan-description">
+                        <p>7 day free trial, <br> 500/- monthly thereafter</p>
+                    </div>
+                    <div class="plan-subscription" onclick=" location.href='';">Subscribe</div>
+                </div>
+            </div>
+        </div>
+        <div id="join-container">
+            <div id="join-heading">START YOUR JOURNEY TODAY!!</div>
+            <div id="join-button" onclick=" location.href='';">Join us</div>
+        </div>
+    </section>
     <section id="section5">
         <div id="gallery-container">
             <div class="gallery-box" id="box1"></div>
@@ -49,8 +115,36 @@
                 <button type="submit" id="contact-form-submit-button">Submit</button>
             </form>
         </div>
-        <div id="about-us"></div>
+        <div id="company-details">
+            <div id="important-links-containers">
+                <div class="links-container" id="linkscontainer1">
+                    <div class="link-container-heading" id="link-container-heading1"></div>
+                    <!-- <div class="important-link"></div> -->
+                </div>
+                <div class="links-container" id="linkscontainer2">
+                        <div class="link-container-heading" id="link-container-heading1"></div>
+                </div>
+                <div class="links-container" id="linkscontainer3">
+                        <div class="link-container-heading" id="link-container-heading1"></div>
+                </div>
+            </div>
+            <div id="social-links">
+                <div class="social-link" id="facebook-link" onclick=" location.href='http://www.facebook.com';">
+                    <img src="./public/img/logo/facebook-logo.png" alt="">
+                </div>
+                <div class="social-link" id="instagram-link" onclick=" location.href='http://www.instagram.com';">
+                    <img src="./public/img/logo/instagram-logo.png" alt="">
+                </div>
+                <div class="social-link" id="twitter-link" onclick=" location.href='http://www.twitter.com';">
+                    <img src="./public/img/logo/twitter-logo.png" alt="">
+                </div>
+            </div>
+        </div>
     </section>
-    <footer>copyright &copy 2021  | All rights reserved</footer>
+    <footer>copyright &copy 2021 Solitary Gymnasium  | All rights reserved</footer>
+    <!-- SCRIPTS -->
+    <script src="./public/js/home_gallery_man.js"></script>
+    <script src="./public/js/imp_link_setter.js"></script>
+    <script src="./public/js/location_setter.js"></script>
 </body>
 </html>

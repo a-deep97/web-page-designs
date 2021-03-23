@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root{
 
     --screen: #c5c1c0;
     --steel: #0a1612;
     --denim: #1a2930;   
     --marigold: #f7ce3e;
+    --font1: 'Righteous', cursive;
+    --font2:  'Dela Gothic One', cursive;
+    --font3: 'Pangolin', cursive;
+    --font4: 'Roboto', sans-serif;
 }
 
 body, html{
@@ -25,15 +33,67 @@ header{
     width: 25%;
     height: 100%;
     background-color: var(--marigold);
+    cursor: pointer;
 }
-#links-container{
+#title-icon{
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 90%;
+}
+#title-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    color: var(--steel);
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: var(--font1);
+}
+#nav-links-container{
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
     height: 70%;
     background-color: var(--steel);
     opacity: 0.95;
+}
+.nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px;
+    width: 150px;
+    height: 80%;
+}
+.nav-link a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 80%;
+    padding: 5px 5px;
+    font-size: 1.2rem;
+    color: white;
+    font-family: var(--font3);
+    text-decoration: none;
+}
+.nav-link a:hover{
+    background-color: var(--marigold);
+    color: var(--steel);
+}
+#link6 a{
+    background-color: var(--marigold);
+    color: var(--steel);
+    margin: 0px 20px;
+}
+#link6 a:hover{
+    background-color: black;
+    color: white;
 }
 /* Main section */
 #section1{
@@ -108,8 +168,11 @@ header{
     align-items: center;
     width: 90%;
     height: 30%; 
-    font-size: 2.4rem;
-    background-color: #f7ce3e;
+    font-size: 2.5rem;
+    font-family: var(--font2);
+    font-weight: bold;
+    background-color: var(--denim);
+    color: var(--marigold);
 }
 #location-container{
     display: flex;
@@ -117,6 +180,35 @@ header{
     align-items: center;
     width: 90%;
     height: 100%;
+}
+.city-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    height: 95%;
+    margin: 0px 5px;
+}
+.city-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 90%;
+}
+.city-image img{
+    max-width: 70%;
+    max-height: 70%;
+}
+.city-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 50%;
+    font-size: 2.2rem;
+    font-family: var(--font3);
 }
 /* about gym */
 #section3{
@@ -146,7 +238,8 @@ header{
     width: 90%;
     height: 30%;
     margin: 0px 20px;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-family: var(--font2);
     color: white;
 }
 #about-article{
@@ -157,6 +250,7 @@ header{
     height: 100%;
     font-size: 1.8rem;
     color: white;
+    font-family: var(--font3);
 }
 /* membership and plans */
 #section4{
@@ -165,7 +259,132 @@ header{
     align-items: center;
     width: 100%;
     height: 500px;
+    margin: 10px 0px;
+    background: url('../img/background6.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#plan-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    margin: 0px 20px;
+}
+#plan-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 30%;
+    font-size: 3rem;
+    font-family: var(--font1);
+    color: white;
+}
+#plans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+}
+.plan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}   
+.plan:hover{
+    width: 120%;
+}
+.plan-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 30%;
+    background-color: var(--denim);
+    font-size: 2rem;
+    font-family: var(--font1);
+    color: white;
+}
+.plan-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 90%;
+    background-color: var(--steel);
+}
+.plan-description p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    margin: 0px 0px;
+    color: white;
+    font-size: 2rem;
+    font-family: var(--font3);
+}
+.plan-subscription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 30%;
+    margin: 5px 0px;
     background-color: var(--marigold);
+    font-size: 2rem;
+    font-family: var(--font3);
+    cursor: pointer;
+}
+.plan-subscription:hover{
+    background-color: black;
+    color: white;
+}
+#join-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 90%;
+    margin: 0px 20px;
+}
+#join-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 70%;
+    font-size: 2.8rem;
+    font-family: var(--font1);
+    color: var(--marigold);
+}
+#join-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 20%;
+    margin: 10px 20px;
+    font-size: 3rem;
+    font-family: var(--font1);
+    background-color: var(--marigold);
+    color: var(--steel);
+    cursor: pointer;
+}
+#join-button:hover{
+    background-color: var(--steel);
+    color: var(--marigold);
+    width: 60%;
+    font-size: 3.2rem;
 }
 /* gallary section */
 #section5{
@@ -190,6 +409,11 @@ header{
     align-items: center;
     width: 100%;
     height: 100%;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 /* contact section */
 #section6{
@@ -219,6 +443,7 @@ header{
     font-size: 2.6rem;
     color: white;
     margin: 10px 0px;
+    font-family: var(--font1);
 }
 #contact-form{
     display: flex;
@@ -234,6 +459,7 @@ header{
     width: 95%;
     font-size: 1.5rem;
     color: white;
+    font-family: var(--font3);
 }
 .contact-form-input{
     display: flex;
@@ -265,14 +491,83 @@ header{
     align-items: center;
     margin: 10px 10px;
     border-radius: 20px;
+    font-size: 1.2rem;
+    font-family: var(--font3);
+    font-weight: bold;
 }
-#about-us{
+#company-details{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    flex-direction: column;
     width: 90%;
     height: 95%;
     margin: 0px 10px;
+}
+#important-links-containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 95%;
+}
+.links-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 95%;
+    width: 100%;
+}
+.link-container-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    color: var(--marigold);
+    font-size: 2rem;
+    font-family: var(--font1);
+}
+.important-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 90%;
+    margin: 0px 10px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: var(--font3);
+}
+.important-link:hover{
+    color: red;
+    font-weight: bold;
+}
+
+#social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 95%;
+}
+.social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 70px;
+    margin: 0px 10px;
+}
+.social-link:hover{
+    height: 100%;
+    width: 90px; 
+}
+.social-link img{
+    max-width: 100%;
+    max-height: 100%;
 }
 footer{
     display: flex;
@@ -281,4 +576,6 @@ footer{
     width: 100%;
     height: 30px;
     font-size: 1.2rem;
+    background-color: var(--denim);
+    color: white;
 }

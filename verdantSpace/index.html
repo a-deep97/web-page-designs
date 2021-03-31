@@ -4,19 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/css/index.css">
+    <script src="./p5js/lib/p5.js"></script>
+    <script src="./p5js/lib/p5.dom.js"></script>
     <title>verdantSpace</title>
 </head>
 <body>
     <header></header>
-    <nav id="main-navbar"></nav>
-    <section id="main-section"></section>
-    <section id="services-section"></section>
-    <section id="serving-location-section"></section>
-    <section id="solar-section"></section>
-    <section id="water-harvesting-section"></section>
-    <section id="wind-mill-section"></section>
-    <section id="testimonials-section"></section>
-    <section id="contact-info-section"></section>
-    <footer></footer>
+    <nav id="main-navbar">
+        <div id="icon-container"></div>
+        <div id="title-container">
+            <img src="./public/img/title.png" alt="" srcset="">
+        </div>
+        <div id="nav-link-container">
+            <div class="nav-link" id="nav-link1">
+                <a href="">Home</a>
+            </div>
+            <div class="nav-link" id="nav-link2">
+                <a href="">Solutions</a>
+            </div>
+            <div class="nav-link" id="nav-link3">
+                <a href="">Gallery</a>
+            </div>
+            <div class="nav-link" id="nav-link4">
+                <a href="">Projects</a>
+            </div>
+            <div class="nav-link" id="nav-link5">
+                <a href="">Shop</a>
+            </div>
+            <div class="nav-link" id="nav-link6">
+                <a href="">Contact us</a>
+            </div>
+        </div>
+    </nav>
+    <section id="main-section">
+        <div id="services-container">
+                <div class="each-service" id="service1">Solar Installation</div>
+                <div class="each-service" id="service2">Rain Water Harvesting</div>
+        </div>
+        <div id="book-container">
+            <div id="book-now">Book now</div>
+        </div>
+    </section>
+    <section id="serving-location-section">
+        <div id="location-heading">OUR CURRENT LOCATIONS</div>
+        <div id="location-container">
+            <!-- <div class="city-container">
+                <div class="city-image">
+                    <img src="" alt="">
+                </div>
+                <div class="city-name"></div>
+            </div> -->
+        </div>
+    </section>
+    <section id="solar-section">
+        <div id="solar-section-heading">Rooftop solar panels</div>
+        <div id="solar-content">
+            <div id="solar-article"></div>
+            <div class="know-more-button">Know More</div>
+        </div>
+    </section>
+    <section id="water-harvesting-section">
+        <div id="water-harvesting-section-heading">Water harvesting systems</div>
+        <div id="water-harvesting-content">
+            <div id="water-harvesting-article"></div>
+            <div class="know-more-button">Know More</div>
+        </div>
+    </section>
+    <section id="testimonials-section">
+        <div id="testimonial-heading">WHAT OUR CUSTOMERS SAY...</div>
+        <div id="testimonials-container">
+            <!-- <div class="testimonial-box" id="testimonial-box1">
+                <div class="testimonial-image" id="testimonial-image1">
+                    <img src="" alt="">
+                </div>
+                <div class="testimonial-name" id="testimonial-name1"></div>
+                <div class="testimonial-comment" id="testimonial-comment1"></div>
+            </div> -->
+        </div>
+    </section>
+    <section id="contact-info-section">
+        <div id="contact-form-container">
+            <div id="contact-heading">Contact Us</div>
+            <form action="" id="contact-form">
+                <label for="name" class="contact-form-label">Name</label>
+                <input type="text" id="name" class="contact-form-input" name="name">
+                <label for="email" class="contact-form-label">Email</label>
+                <input type="email" id="email" class="contact-form-input" name="email">
+                <label for="contact-number" class="contact-form-label">Contact</label>
+                <input type="number" id="contact-number" class="contact-form-input" name="contact-number">
+                <label for="message" class="contact-form-label">Message</label>
+                <textarea name="message" id="message-box" cols="30" rows="10"></textarea>
+                <button type="submit" id="contact-form-submit-button">Submit</button>
+            </form>
+        </div>
+        <div id="company-details">
+            <div id="about-company">
+                <div id="about-heading">About verdantSpace</div>
+                <div id="about-article">We at verdantSpace have mastered the art of harnessing the sun's energy for our customers, with over 6 years of experience. We also believe in harnessing natural resources, such as rain water through various harvesting systems in addition to free energy. verdantSpace was created in 2021 by Aman Deep, an IIT Kharagpur graduate, and three other friends, and by 2027 had produced a revenue of $50 million.</div>
+                <div id="about-address">verdantSpace private limited | 302 Green valley , bengaluru - 56192</div>
+                <div id="about-email">contact@verdantSpace.com</div>
+            </div>
+            <div id="social-media-heading">Follow us on</div>
+            <div id="social-links">
+                <div class="social-link" id="facebook-link" onclick=" location.href='http://www.facebook.com';">
+                    <img src="./public/img/logo/facebook-logo.png" alt="">
+                </div>
+                <div class="social-link" id="instagram-link" onclick=" location.href='http://www.instagram.com';">
+                    <img src="./public/img/logo/instagram-logo.png" alt="">
+                </div>
+                <div class="social-link" id="twitter-link" onclick=" location.href='http://www.twitter.com';">
+                    <img src="./public/img/logo/twitter-logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>Copyright &copy 2021 verdantSpace | All rights reserved</footer>
+
+    <!-- SCRIPTS -->
+    <script src="./p5js/sketches/globe-icon.js"></script>
+    <script src="./public/js/testimonial-filler.js"></script>
+    <script src="./public/js/location-setter.js"></script>
 </body>
 </html>

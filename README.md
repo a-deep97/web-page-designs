@@ -13,3 +13,7 @@
 ### Gymnasium
     Web page is for gymnasium website
 [Solitary gymnasium](https://a-deep97.github.io/web-page-designs/gymnasium/)
+
+### verdantSpace
+    Web page is for a solar and water harvesting system company website
+[verdantSpace](https://a-deep97.github.io/web-page-designs/verdntSpace/)
